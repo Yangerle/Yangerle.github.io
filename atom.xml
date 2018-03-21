@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>myblog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://Yangerle.github.io/"/>
+  <updated>2017-09-05T09:33:06.385Z</updated>
+  <id>http://Yangerle.github.io/</id>
+  
+  <author>
+    <name>Yangerle</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://Yangerle.github.io/2018/03/21/hello-world/"/>
+    <id>http://Yangerle.github.io/2018/03/21/hello-world/</id>
+    <published>2018-03-21T06:12:42.349Z</published>
+    <updated>2017-09-05T09:33:06.385Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>myworld</title>
+    <link href="http://Yangerle.github.io/2017/09/06/myworld/"/>
+    <id>http://Yangerle.github.io/2017/09/06/myworld/</id>
+    <published>2017-09-06T00:38:09.000Z</published>
+    <updated>2017-09-07T04:06:05.395Z</updated>
+    
+    <content type="html"><![CDATA[<p>会当凌绝顶，<br>一览众山小。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;会当凌绝顶，&lt;br&gt;一览众山小。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="http://Yangerle.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="思维" scheme="http://Yangerle.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+      <category term="智慧" scheme="http://Yangerle.github.io/tags/%E6%99%BA%E6%85%A7/"/>
+    
+      <category term="尾草" scheme="http://Yangerle.github.io/tags/%E5%B0%BE%E8%8D%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="http://Yangerle.github.io/2017/09/05/My-New-Post/"/>
+    <id>http://Yangerle.github.io/2017/09/05/My-New-Post/</id>
+    <published>2017-09-05T10:11:59.000Z</published>
+    <updated>2017-09-05T13:38:25.465Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h2><h3 id="这是我的第一篇hexo博客"><a href="#这是我的第一篇hexo博客" class="headerlink" title="这是我的第一篇hexo博客"></a>这是我的第一篇hexo博客</h3><ul><li>hexo接口占用问题,在_congfig.yml中加入：</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">   port: 4001</span><br><span class="line">   compress: <span class="literal">true</span></span><br><span class="line">   header: <span class="literal">true</span></span><br></pre></td></tr></table></figure><ul><li>hexo与GitHub连接：</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/Yangerle/Yangerle.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><ul><li>hexo初始部署在GitHub时,应该先安装插件：</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><h3 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h3><p> Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --watch</span><br></pre></td></tr></table></figure><h3 id="完成后部署："><a href="#完成后部署：" class="headerlink" title="完成后部署："></a>完成后部署：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure><h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure><h3 id="idea之bug"><a href="#idea之bug" class="headerlink" title="idea之bug"></a>idea之bug</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">标题<span class="comment">#号后应加入空格，markdown并未规定</span></span><br></pre></td></tr></table></figure><p><em>杨旭乐 于 2017.9.5</em></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;你好&quot;&gt;&lt;a href=&quot;#你好&quot; class=&quot;headerlink&quot; title=&quot;你好&quot;&gt;&lt;/a&gt;你好&lt;/h2&gt;&lt;h3 id=&quot;这是我的第一篇hexo博客&quot;&gt;&lt;a href=&quot;#这是我的第一篇hexo博客&quot; class=&quot;headerlink&quot; title=
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
