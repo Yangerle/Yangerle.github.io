@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Yangerle.github.io/"/>
-  <updated>2018-03-22T08:04:23.956Z</updated>
+  <updated>2018-03-22T08:15:56.091Z</updated>
   <id>http://Yangerle.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习过程思索</title>
+    <link href="http://Yangerle.github.io/2018/03/22/%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E6%80%9D%E7%B4%A2/"/>
+    <id>http://Yangerle.github.io/2018/03/22/学习过程思索/</id>
+    <published>2018-03-22T06:27:16.000Z</published>
+    <updated>2018-03-22T08:15:56.091Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="走向全栈的心路历程"><a href="#走向全栈的心路历程" class="headerlink" title="走向全栈的心路历程"></a>走向全栈的心路历程</h2><ul><li>前端入门，进入后端</li><li>后端深入，涉足前端</li><li>深入浅出，统一全栈</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="string">"success"</span>)</span><br></pre></td></tr></table></figure><h2 id="更多精彩-gt-请进入我的博客"><a href="#更多精彩-gt-请进入我的博客" class="headerlink" title="更多精彩-&gt;请进入我的博客"></a><a href="https://yangerle.github.io/">更多精彩-&gt;请进入我的博客</a></h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="www.baidu.com">走你</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;走向全栈的心路历程&quot;&gt;&lt;a href=&quot;#走向全栈的心路历程&quot; class=&quot;headerlink&quot; title=&quot;走向全栈的心路历程&quot;&gt;&lt;/a&gt;走向全栈的心路历程&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;前端入门，进入后端&lt;/li&gt;
+&lt;li&gt;后端深入，涉足前端&lt;/li&gt;
+&lt;l
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="http://Yangerle.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="思维" scheme="http://Yangerle.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>to_r720_yang_vue_blog</title>
