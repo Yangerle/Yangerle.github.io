@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?b636143c4b4c0ff1bc8942db25a8b0e5"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>创建与远程仓库协调一致的本地仓库 | myblog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="思维">
+    <meta name="description" content="第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入 用git命令将置入的项目文件添加进代码管理，commit后，提交至云端，用到的命令有：  1234git clone https://git.coding.net/Yangerle/prjname.gitgit add .git commit -m &quot;init prj&quot;git push -u orgin">
+<meta name="keywords" content="思维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="创建与远程仓库协调一致的本地仓库">
+<meta property="og:url" content="http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/index.html">
+<meta property="og:site_name" content="myblog">
+<meta property="og:description" content="第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入 用git命令将置入的项目文件添加进代码管理，commit后，提交至云端，用到的命令有：  1234git clone https://git.coding.net/Yangerle/prjname.gitgit add .git commit -m &quot;init prj&quot;git push -u orgin">
+<meta property="og:updated_time" content="2018-03-22T15:33:59.793Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="创建与远程仓库协调一致的本地仓库">
+<meta name="twitter:description" content="第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入 用git命令将置入的项目文件添加进代码管理，commit后，提交至云端，用到的命令有：  1234git clone https://git.coding.net/Yangerle/prjname.gitgit add .git commit -m &quot;init prj&quot;git push -u orgin">
+    
+        <link rel="alternate" type="application/atom+xml" title="myblog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Yangerle</h5>
+          <a href="mailto:1136510804@qq.com" title="1136510804@qq.com" class="mail">1136510804@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Yangerle" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.jianshu.com/u/d9032a8683d4" target="_blank" >
+                <i class="icon icon-lg icon-edit"></i>
+                Jianshu
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">创建与远程仓库协调一致的本地仓库</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">创建与远程仓库协调一致的本地仓库</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-03-22T09:03:23.000Z" itemprop="datePublished" class="page-time">
+  2018-03-22
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/web前端/">web前端</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入"><span class="post-toc-number">1.</span> <span class="post-toc-text">第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#思路二：在本地创建git仓库，然后将项目文件置入，用git命令使其与创建的远程仓库相关联"><span class="post-toc-number">2.</span> <span class="post-toc-text">思路二：在本地创建git仓库，然后将项目文件置入，用git命令使其与创建的远程仓库相关联</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#综上"><span class="post-toc-number">3.</span> <span class="post-toc-text">综上</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#遇到问题的解决"><span class="post-toc-number">4.</span> <span class="post-toc-text">遇到问题的解决</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更多精彩-gt-请进入我的博客"><span class="post-toc-number">5.</span> <span class="post-toc-text">更多精彩-&gt;请进入我的博客</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#参考"><span class="post-toc-number">6.</span> <span class="post-toc-text">参考</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-创建与远程仓库协调一致的本地仓库"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">创建与远程仓库协调一致的本地仓库</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-03-22 17:03:23" datetime="2018-03-22T09:03:23.000Z"  itemprop="datePublished">2018-03-22</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/web前端/">web前端</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入"><a href="#第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入" class="headerlink" title="第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入"></a>第一种思路，在github或者coding上创建仓库，clone远程仓库，将本地代码文件置入</h2><ul>
+<li>用git命令将置入的项目文件添加进代码管理，commit后，提交至云端，用到的命令有：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.coding.net/Yangerle/prjname.git</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"init prj"</span></span><br><span class="line">git push -u orgin master</span><br></pre></td></tr></table></figure>
+<h2 id="思路二：在本地创建git仓库，然后将项目文件置入，用git命令使其与创建的远程仓库相关联"><a href="#思路二：在本地创建git仓库，然后将项目文件置入，用git命令使其与创建的远程仓库相关联" class="headerlink" title="思路二：在本地创建git仓库，然后将项目文件置入，用git命令使其与创建的远程仓库相关联"></a>思路二：在本地创建git仓库，然后将项目文件置入，用git命令使其与创建的远程仓库相关联</h2><ul>
+<li>项目文件置入流程，同思路一，使用到的命令如下：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"init prj"</span></span><br><span class="line">git remote add orgin https://git.coding.net/Yangerle/prjname.git</span><br><span class="line">git push -u orgin master</span><br></pre></td></tr></table></figure>
+<h2 id="综上"><a href="#综上" class="headerlink" title="综上"></a>综上</h2><ul>
+<li>更推荐，第一种方式</li>
+</ul>
+<h2 id="遇到问题的解决"><a href="#遇到问题的解决" class="headerlink" title="遇到问题的解决"></a>遇到问题的解决</h2><ul>
+<li>在为hexo创建仓库时，内部主题文件，indigo不能加入代码管理，因为indigo也属于一个仓库，要将其内部隐藏的.git文件夹删除才能加入暂存区，否则会报如下错误：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">modified:   themes/indigo (modified content, untracked content)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>代码仓库忽略不重要的文件夹，使用.gitignore文件，文件内容如下</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">node_modules/</span><br><span class="line">.deploy_git/</span><br><span class="line">.idea/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure>
+<h2 id="更多精彩-gt-请进入我的博客"><a href="#更多精彩-gt-请进入我的博客" class="headerlink" title="更多精彩-&gt;请进入我的博客"></a><a href="https://yangerle.github.io/">更多精彩-&gt;请进入我的博客</a></h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/minjing_lin/article/details/50678708" target="_blank" rel="noopener">本地Git仓库和远程仓库的创建及关联 Coding.net</a><br><a href="https://blog.csdn.net/nunchakushuang/article/details/45193109" target="_blank" rel="noopener">如何将本地仓库和github仓库关联起来</a><br><a href="https://blog.csdn.net/qq_32846595/article/details/71149312" target="_blank" rel="noopener">如何将本地的代码上传到github</a><br><a href="https://www.cnblogs.com/wanqieddy/p/4210767.html" target="_blank" rel="noopener">modified: xxx(modified content, untracked content)</a><br><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758404317281e54b6f5375640abbb11e67be4cd49e0000" target="_blank" rel="noopener">忽略特殊文件</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-03-22T15:33:59.793Z" itemprop="dateUpdated">2018-03-22 23:33:59</time>
+</span><br>
+
+
+        
+        <a href="http://news.stanford.edu/2005/06/14/jobs-061505/" target="_blank" rel="external">Stay Hungry, Stay Foolish.</a><br>吾志所向，一往无前，愈挫愈奋，再接再厉
+        
+    </div>
+    <footer>
+        <a href="http://Yangerle.github.io">
+            <img src="/img/avatar.jpg" alt="Yangerle">
+            Yangerle
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/思维/">思维</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/&title=《创建与远程仓库协调一致的本地仓库》 — myblog&pic=http://Yangerle.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/&title=《创建与远程仓库协调一致的本地仓库》 — myblog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《创建与远程仓库协调一致的本地仓库》 — myblog&url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/&via=http://Yangerle.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/03/22/hello-world/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/03/22/学习过程思索/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">学习过程思索</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        404 kick 200
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/mywechat1.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/mywechat1.png" data-alipay="/img/myalipay1.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/&title=《创建与远程仓库协调一致的本地仓库》 — myblog&pic=http://Yangerle.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/&title=《创建与远程仓库协调一致的本地仓库》 — myblog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《创建与远程仓库协调一致的本地仓库》 — myblog&url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/&via=http://Yangerle.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://Yangerle.github.io/2018/03/22/创建与远程仓库协调一致的本地仓库/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADIUlEQVR42u3aQXLbMAwF0Nz/0um2nYzV/wGljejHlSdjU3jUAgHAj494ff622r/n69Vvv+58/fTbFjY2NvZD2LNQku9//fwKkMSTsJPYsLGxsU9lX4eVJ4kkmSXJb7NndMTY2NjY2AE7p16XN21xgo2NjY19vV1bWiS7zY7+nyYwbGxs7B/P3jeJ8qFCmwKvD+vbe2nY2NjYP559byj/9/O3zLexsbGxfzB7c6VmtvOshbQfP//xW2xsbOyD2DNGPuJtDyJvG7VlBjY2Nvap7PZq4yZRbVLXvpmFjY2NfSr7rtDbgfHmUk7yl8iCjY2NfRB7dlGmvaaTHHf+nTzJFXhsbGzsB7Lbf/qTBLN5A5tRbvF9bGxs7KPZsxDzPLnJq0nDK2pRYWNjYx/EbtsxSYKZXfq599pQ0UvDxsbGfjh7/4C8/GiDy5tNda2BjY2N/Qbstt0/2ydPe8kVnJubStjY2NgPYeeFwSzoTRMqaSFtyipsbGzsM9ib1JVfo2kbUnVXLD6al1MRbGxs7Meyk7VpxOdprB05zNjFwsbGxn4IO0keSbq6Di5pACXDiVmKfZm3sbGxsQ9i5ylhP0iYtZmSIysGFdjY2NjHse9t32yaSnclzr+0wLCxsbEPYueMWROqDagIutxh+PawsbGxH8XelxP5AV0XG3kinL0AbGxs7PPY+YM/g9WOh+tAg2iLi5vY2NjYR7Dz0FvM5srmZngQlSXY2NjYR7BniWQ2xN1QZzu/LJawsbGxD2K3sM0gob0AlDyl3Q0bGxv7Hdh5wygPK/ltG/SmyMHGxsY+m33vkLUoDEZr1QjDxsbGfgN2nq7yi4+z8XAOK/bHxsbGPo6dN4lmw4MNdZZEo6YSNjY29sPZn+VqC4+8AbQpir5xMICNjY3949mzBDArVNqBcf7EtlDBxsbGPo+dD3dnx7H5zvVrWI0isLGxsY9jb5ry7W83F302TSVsbGxs7M2oYHOJJ28tFS0nbGxs7Ddmz5r4s7XfExsbG/t92LMGUN7unwXajpOL8gkbGxv7IPYmkcyu3bTtofwFtEeJjY2N/XD2LzK72CRzV08uAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
