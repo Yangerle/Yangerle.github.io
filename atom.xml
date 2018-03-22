@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Yangerle.github.io/"/>
-  <updated>2018-03-22T03:55:49.561Z</updated>
+  <updated>2018-03-22T08:04:23.956Z</updated>
   <id>http://Yangerle.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>to_r720_yang_vue_blog</title>
+    <link href="http://Yangerle.github.io/2018/03/22/to-r720-yang-vue-blog/"/>
+    <id>http://Yangerle.github.io/2018/03/22/to-r720-yang-vue-blog/</id>
+    <published>2018-03-22T03:30:21.000Z</published>
+    <updated>2018-03-22T08:04:23.956Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="yang-vue-blog迁移至新电脑，代码仓库放置在codeing"><a href="#yang-vue-blog迁移至新电脑，代码仓库放置在codeing" class="headerlink" title="yang-vue-blog迁移至新电脑，代码仓库放置在codeing"></a>yang-vue-blog迁移至新电脑，代码仓库放置在codeing</h2><h3 id="在clone时遇到问题"><a href="#在clone时遇到问题" class="headerlink" title="在clone时遇到问题"></a>在clone时遇到问题</h3><ul><li><p>执行git clone 命令时弹出输入账号密码的对话框</p><p>  解决：首次增加远程地址的时候带上密码，使用如下命令执行操作：</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://Yangerle:password@git.coding.net/Yangerle/yang-vue-blog.git</span><br></pre></td></tr></table></figure><ul><li><p>clone命令执行过程中，速度慢，最终报错如下（第一框内容）：</p><p>  解决：项目太大，git默认下载缓存值太小，造成，解决汝下（第二框内容）</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 18 transfer closed with outstanding <span class="built_in">read</span> data remaining </span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">fatal: early EOF</span><br><span class="line">fatal: index-pack failed</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config –global http.postBuffer 524288000（增大缓存值）</span><br><span class="line">git config –list（查看是否成功）</span><br></pre></td></tr></table></figure><h2 id="更多精彩-gt-请进入我的博客"><a href="#更多精彩-gt-请进入我的博客" class="headerlink" title="更多精彩-&gt;请进入我的博客"></a><a href="https://yangerle.github.io/">更多精彩-&gt;请进入我的博客</a></h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.cnblogs.com/canfengyiyue/p/7266682.html" target="_blank" rel="noopener">从coding.net （git clone）项目代码到本地报403错误 解决方案</a></p><p><a href="http://blog.csdn.net/drift_axe/article/details/54924359" target="_blank" rel="noopener">error: RPC failed; curl 18 transfer closed with outstanding read data remaining</a></p><p><a href="https://stackoverflow.com/questions/38618885/error-rpc-failed-curl-transfer-closed-with-outstanding-read-data-remaining" target="_blank" rel="noopener">error: RPC failed; curl transfer closed with outstanding read data remaining</a></p><p><a href="http://blog.csdn.net/it_liuchengli/article/details/77040806" target="_blank" rel="noopener">git报错–RPC failed; curl 18 transfer closed with outstanding read data remaining</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;yang-vue-blog迁移至新电脑，代码仓库放置在codeing&quot;&gt;&lt;a href=&quot;#yang-vue-blog迁移至新电脑，代码仓库放置在codeing&quot; class=&quot;headerlink&quot; title=&quot;yang-vue-blog迁移至新电脑，代码仓库
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="http://Yangerle.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="思维" scheme="http://Yangerle.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>to_r720</title>
