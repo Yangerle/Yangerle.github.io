@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?b636143c4b4c0ff1bc8942db25a8b0e5"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="https://yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/">
+    
+    
+    <title>Hexo博客搭建之在文章中插入图片 | myblog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="hexo">
+    <meta name="description" content="前言在写文章时，常常有配图说明的需求。Hexo有多种图片插入方式，可以将图片存放在本地引用或者将图片放在CDN上引用。 本地绝对路径当Hexo项目中只用到少量图片时，可以将图片统一放在source/images文件夹中，通过markdown语法访问它们。 12source/images/image.jpg![](/images/image.jpg) 图片既可以在首页内容中访问到，也可以在文章正文中">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客搭建之在文章中插入图片">
+<meta property="og:url" content="http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/index.html">
+<meta property="og:site_name" content="myblog">
+<meta property="og:description" content="前言在写文章时，常常有配图说明的需求。Hexo有多种图片插入方式，可以将图片存放在本地引用或者将图片放在CDN上引用。 本地绝对路径当Hexo项目中只用到少量图片时，可以将图片统一放在source/images文件夹中，通过markdown语法访问它们。 12source/images/image.jpg![](/images/image.jpg) 图片既可以在首页内容中访问到，也可以在文章正文中">
+<meta property="og:updated_time" content="2019-09-26T09:09:50.399Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo博客搭建之在文章中插入图片">
+<meta name="twitter:description" content="前言在写文章时，常常有配图说明的需求。Hexo有多种图片插入方式，可以将图片存放在本地引用或者将图片放在CDN上引用。 本地绝对路径当Hexo项目中只用到少量图片时，可以将图片统一放在source/images文件夹中，通过markdown语法访问它们。 12source/images/image.jpg![](/images/image.jpg) 图片既可以在首页内容中访问到，也可以在文章正文中">
+    
+        <link rel="alternate" type="application/atom+xml" title="myblog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Yangerle</h5>
+          <a href="mailto:1136510804@qq.com" title="1136510804@qq.com" class="mail">1136510804@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Yangerle" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/p/1005055440177209" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/./atom.xml" target="_blank" >
+                <i class="icon icon-lg icon-rss"></i>
+                Rss
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Hexo博客搭建之在文章中插入图片</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Hexo博客搭建之在文章中插入图片</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-11-15T06:25:15.000Z" itemprop="datePublished" class="page-time">
+  2018-11-15
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/following/">following</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#本地"><span class="post-toc-number">2.</span> <span class="post-toc-text">本地</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#绝对路径"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">绝对路径</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#相对路径"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">相对路径</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CDN引用"><span class="post-toc-number">3.</span> <span class="post-toc-text">CDN引用</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Hexo博客搭建之在文章中插入图片"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Hexo博客搭建之在文章中插入图片</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-11-15 14:25:15" datetime="2018-11-15T06:25:15.000Z"  itemprop="datePublished">2018-11-15</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/following/">following</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>在写文章时，常常有配图说明的需求。Hexo有多种图片插入方式，可以将图片存放在本地引用或者将图片放在CDN上引用。</p>
+<h4 id="本地"><a href="#本地" class="headerlink" title="本地"></a>本地</h4><h5 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h5><p>当Hexo项目中只用到少量图片时，可以将图片统一放在source/images文件夹中，通过markdown语法访问它们。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span>/images/image.jpg</span><br><span class="line">![](/images/image.jpg)</span><br></pre></td></tr></table></figure>
+<p>图片既可以在首页内容中访问到，也可以在文章正文中访问到。</p>
+<h5 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h5><p>图片除了可以放在统一的images文件夹中，还可以放在文章自己的目录中。文章的目录可以通过配置_config.yml来生成。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>将_config.yml文件中的配置项<code>post_asset_folder</code>设为<code>true</code>后，执行命令$ hexo new post_name，在source/_posts中会生成文章post_name.md和同名文件夹post_name。将图片资源放在post_name中，文章就可以使用相对路径引用图片资源了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_posts/post_name/image.jpg</span><br><span class="line">![](image.jpg)</span><br></pre></td></tr></table></figure>
+<p>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。</p>
+<p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_posts/post_name/image.jpg</span><br><span class="line">&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="CDN引用"><a href="#CDN引用" class="headerlink" title="CDN引用"></a>CDN引用</h4><p>除了在本地存储图片，还可以将图片上传到一些免费的CDN服务中。比如Cloudinary提供的图片CDN服务，在<a href="https://cloudinary.com/" target="_blank" rel="noopener">Cloudinary</a>中上传图片后，会生成对应的url地址，将地址直接拿来引用即可。</p>
+<p>摘自<a href="https://yanyinhong.github.io/2017/05/02/How-to-insert-image-in-hexo-post/#search" target="_blank" rel="noopener">Hexo博客搭建之在文章中插入图片</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-09-26T09:09:50.399Z" itemprop="dateUpdated">2019-09-26 17:09:50</time>
+</span><br>
+
+
+        
+        <a href="http://news.stanford.edu/2005/06/14/jobs-061505/" target="_blank" rel="external">Stay Hungry, Stay Foolish.</a><br>吾志所向，一往无前，愈挫愈奋，再接再厉
+        
+    </div>
+    <footer>
+        <a href="http://Yangerle.github.io">
+            <img src="/img/avatar.jpg" alt="Yangerle">
+            Yangerle
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/&title=《Hexo博客搭建之在文章中插入图片》 — myblog&pic=http://Yangerle.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/&title=《Hexo博客搭建之在文章中插入图片》 — myblog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo博客搭建之在文章中插入图片》 — myblog&url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/&via=http://Yangerle.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/11/15/Win10系统如何运行IE8/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Win10系统如何运行IE8</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        404 kick 200
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/mywechat1.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/mywechat1.png" data-alipay="/img/myalipay1.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/&title=《Hexo博客搭建之在文章中插入图片》 — myblog&pic=http://Yangerle.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/&title=《Hexo博客搭建之在文章中插入图片》 — myblog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo博客搭建之在文章中插入图片》 — myblog&url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/&via=http://Yangerle.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://Yangerle.github.io/2018/11/15/Hexo博客搭建之在文章中插入图片/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtUlEQVR42u3awW7bQAwE0Pz/T7tA0UN7sDOzXNpB8XQKHMnS2wAiM8uvr/h4/D4mnz/+OpIzk2uvHXh4eHhHj/7sSB7u2fnJma+fJ/nkm2/Gw8PDW+O9frmfMZIyk9/l9X2ffo6Hh4f3UV5bTs5e9PlC4OHh4f2vvBaQLxAeHh7eZ3lJGJHHCvk3TArD5awFDw8Pr3tvFxtgP+Hnxf09PDw8vMGuehKq5uXhrPycPeefa/Hw8PAWeO3m1lnr3IawZy1y8R8DHh4e3piXN9P5cuTLdDaAda35xsPDwyt5xTZSvJWVBLJ5GRjFwXh4eHgLvHxEYB405N9/uRTh4eHhrXW5SSCbIM/GueYx8SirwMPDwyt57bZT3vK2MXHeyhcNPR4eHt5V3qT9nZPOttyKdhwPDw9vgdde0L7ik3a5ve/Kbh4eHh5ezLsVQMy/Jw9K8mXFw8PDez/vLHJtP0+uyiOJf54ZDw8Pb42X3zh/9DyWvTWI8DTGxcPDw7vK24sP8rCj3U5rJwTw8PDw7vLaYtD+PB+6OtuKw8PDw9vjJVtf7UjBpDDkz5MvJR4eHt4Gry0M+Qu9Pb8duiqmIfDw8PCuwvImdTIikI8gtIMF34wO4OHh4a3x3lkMzgYFojT62egAHh4e3iVeHj20W195gNu2+/nAAR4eHt4GL3k1bwQZbW6Q/JXw8PDwPsWbb+HnA6Z5AThk4+Hh4S3w2rZ40l7nwUFbqKIihIeHh3eJ9yiPPCBod/CT5rtu3/Hw8PAWePP5pbNCkr/6by0NHh4e3l3eYUh6dMs5rx01wMPDw9vjtcUgD2TPRgrOlqD4NR4eHt5beG0kkYcLbaA8yqfx8PDwPsRLtsTygHXeOj+9Cg8PD2+Nd2sAqy0VecnJRxDw8PDwtnnzDbA25D3DtMuNh4eHt8D7BQRL5CkJBLZwAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

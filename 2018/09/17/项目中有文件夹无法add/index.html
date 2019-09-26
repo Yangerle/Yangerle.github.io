@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?b636143c4b4c0ff1bc8942db25a8b0e5"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="https://yangerle.github.io/2018/09/17/项目中有文件夹无法add/">
+    
+    
+    <title>项目中有文件夹无法add | myblog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="问解">
+    <meta name="description" content="问题描述 在提交hexo博客项目时，./themes/indigo是一个子项目，在不知道的情况下提交至远程仓库，结果indigo文件夹的内容并没有上传，在本地删除.git文件夹，然后继续执行git add -A命令，结果提示分支是干净的，没有要提交的东西。  探索过程 使用关键词 项目中有文件夹无法add进去 ，按照文章执行如下命令git add -f ./themes/indigo/*,报错如下">
+<meta name="keywords" content="问解">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目中有文件夹无法add">
+<meta property="og:url" content="http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/index.html">
+<meta property="og:site_name" content="myblog">
+<meta property="og:description" content="问题描述 在提交hexo博客项目时，./themes/indigo是一个子项目，在不知道的情况下提交至远程仓库，结果indigo文件夹的内容并没有上传，在本地删除.git文件夹，然后继续执行git add -A命令，结果提示分支是干净的，没有要提交的东西。  探索过程 使用关键词 项目中有文件夹无法add进去 ，按照文章执行如下命令git add -f ./themes/indigo/*,报错如下">
+<meta property="og:updated_time" content="2018-09-17T14:21:37.736Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="项目中有文件夹无法add">
+<meta name="twitter:description" content="问题描述 在提交hexo博客项目时，./themes/indigo是一个子项目，在不知道的情况下提交至远程仓库，结果indigo文件夹的内容并没有上传，在本地删除.git文件夹，然后继续执行git add -A命令，结果提示分支是干净的，没有要提交的东西。  探索过程 使用关键词 项目中有文件夹无法add进去 ，按照文章执行如下命令git add -f ./themes/indigo/*,报错如下">
+    
+        <link rel="alternate" type="application/atom+xml" title="myblog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Yangerle</h5>
+          <a href="mailto:1136510804@qq.com" title="1136510804@qq.com" class="mail">1136510804@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Yangerle" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/p/1005055440177209" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/./atom.xml" target="_blank" >
+                <i class="icon icon-lg icon-rss"></i>
+                Rss
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">项目中有文件夹无法add</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">项目中有文件夹无法add</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-09-17T08:17:53.000Z" itemprop="datePublished" class="page-time">
+  2018-09-17
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/web前端/">web前端</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#问题描述"><span class="post-toc-number">1.</span> <span class="post-toc-text">问题描述</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#探索过程"><span class="post-toc-number">2.</span> <span class="post-toc-text">探索过程</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#附："><span class="post-toc-number">3.</span> <span class="post-toc-text">附：</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更多精彩-gt-请进入我的博客"><span class="post-toc-number"></span> <span class="post-toc-text">更多精彩-&gt;请进入我的博客</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#参考"><span class="post-toc-number"></span> <span class="post-toc-text">参考</span></a>
+        </nav>
+    </aside>
+    
+<article id="post-项目中有文件夹无法add"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">项目中有文件夹无法add</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-09-17 16:17:53" datetime="2018-09-17T08:17:53.000Z"  itemprop="datePublished">2018-09-17</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/web前端/">web前端</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h4><ul>
+<li>在提交hexo博客项目时，./themes/indigo是一个子项目，在不知道<br>的情况下提交至远程仓库，结果indigo文件夹的内容并没有上传，在本<br>地删除.git文件夹，然后继续执行git add -A命令，结果提示分支是干<br>净的，没有要提交的东西。</li>
+</ul>
+<h4 id="探索过程"><a href="#探索过程" class="headerlink" title="探索过程"></a>探索过程</h4><ul>
+<li>使用关键词 <code>项目中有文件夹无法add进去</code> ，按照文章执行如下命令<br><code>git add -f ./themes/indigo/*</code>,报错如下：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: Pathspec <span class="string">'./themes/indigo/_config.yml'</span> is <span class="keyword">in</span> submodule <span class="string">'themes/indigo'</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用报错信息中的 <code>fatal: Pathspec is in submodule</code> 作为关键词继续搜索发现另一篇文章里的内容：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">简述下出现的情况：</span><br><span class="line">	1.之前从github上，<span class="built_in">clone</span>了一个clockpicker的插件，然后，直接将整个版本库，复制到了项目中</span><br><span class="line">	2.发现版本库中，并未记录到该目录！查看 <span class="string">'.gitignore'</span> 等，也并未找到忽略该目录</span><br><span class="line">	3.进入clockpicker目录下，发现有.git, .gitignore，因为原本就是完整的一个git仓库，猜想和这个有关，然后删除的只剩下 dist, src。然后 git status 查看，发现扔未记录</span><br><span class="line">	4.强制 git add dist 目录，出现错误：</span><br><span class="line">		fatal: Pathspec <span class="string">'dist/'</span> is <span class="keyword">in</span> submodule <span class="string">'public/components/clockpicker'</span></span><br><span class="line">	5.google搜索：</span><br><span class="line">		https://stackoverflow.com/questions/24472596/git-fatal-pathspec-is-in-submodule</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">原因解释：</span><br><span class="line">	This works <span class="keyword">if</span> you purposefully removed the .git directory because you wanted to add directory to your main git project. In my specific <span class="keyword">case</span>, I had git cloned an extension and ran git add . without thinking too much. Git decided to create a submodule, <span class="built_in">which</span> I didn<span class="string">'t like. So I removed directory/.git and ran into Git: fatal: Pathspec is in submodule. I couldn'</span>t find out how to remove the submodule stuff. Fixed with the two lines above.</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">	在我的主项目中，我<span class="built_in">clone</span>一个git扩展，并运行了git add，并没有想太多。在这种情况下，git会创建一个子模块(也就是报错中的submodule)，然后，就同我上面的第3步一样，将.git等等都删除了。然后运行git add 报错！</span><br><span class="line">	-----------------</span><br><span class="line">	不懂，反正大概意思了解就行，尽量不要在我们的项目中，再引入其他git仓库，我们自己都觉得不太对劲...</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">解决方案：</span><br><span class="line">	git rm --cached clockpicker</span><br><span class="line">	git add clockpicker才能够</span><br></pre></td></tr></table></figure>
+<ul>
+<li>分析文章发现，应该是在首次提交时没有删除子项目中的.git文件夹，结果<br>在上传时git自动把项目转化为子模块submodule，导致无法add。解决问题的关键<br>在于删除根项目子模块记录，执行以下命令成功提交：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached ./themes/indigo</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'indigo inject'</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h4 id="附："><a href="#附：" class="headerlink" title="附："></a>附：</h4><p>1.git各种add的区别</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . <span class="comment">#将目录下所有新增和修改存至缓存区，但不包括删除</span></span><br><span class="line">git add -u <span class="comment">#将目录下所有修改和删除存至缓存区，但不包扣新增</span></span><br><span class="line">git add -A <span class="comment">#缓存所有改动</span></span><br></pre></td></tr></table></figure>
+<p>2.markdown</p>
+<p><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">markdown基本语法</a></p>
+<p><a href="https://www.jianshu.com/p/a95d8d08bc05" target="_blank" rel="noopener">markdown使用手册</a></p>
+<p>3.git命令</p>
+<p><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener">常用 Git 命令清单</a></p>
+<h2 id="更多精彩-gt-请进入我的博客"><a href="#更多精彩-gt-请进入我的博客" class="headerlink" title="更多精彩-&gt;请进入我的博客"></a><a href="https://yangerle.github.io/">更多精彩-&gt;请进入我的博客</a></h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p> <a href="https://blog.csdn.net/xiaotuni/article/details/77885140" target="_blank" rel="noopener">git 添加文件和目录的时候，老是不能包括在git里。</a></p>
+<p> <a href="https://blog.csdn.net/beyond__devil/article/details/73550807" target="_blank" rel="noopener">git 出现 fatal: Pathspec ‘assets/‘ is in submodule ‘public/components/clockpicker’，解决方法</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-09-17T14:21:37.736Z" itemprop="dateUpdated">2018-09-17 22:21:37</time>
+</span><br>
+
+
+        
+        <a href="http://news.stanford.edu/2005/06/14/jobs-061505/" target="_blank" rel="external">Stay Hungry, Stay Foolish.</a><br>吾志所向，一往无前，愈挫愈奋，再接再厉
+        
+    </div>
+    <footer>
+        <a href="http://Yangerle.github.io">
+            <img src="/img/avatar.jpg" alt="Yangerle">
+            Yangerle
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/问解/">问解</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/&title=《项目中有文件夹无法add》 — myblog&pic=http://Yangerle.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/&title=《项目中有文件夹无法add》 — myblog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《项目中有文件夹无法add》 — myblog&url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/&via=http://Yangerle.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/11/15/Windows-下安装-nvm-管理-nodejs-版本/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Windows 下安装 nvm 管理 nodejs 版本</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/03/22/创建与远程仓库协调一致的本地仓库/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">创建与远程仓库协调一致的本地仓库</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        404 kick 200
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/mywechat1.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/mywechat1.png" data-alipay="/img/myalipay1.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/&title=《项目中有文件夹无法add》 — myblog&pic=http://Yangerle.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/&title=《项目中有文件夹无法add》 — myblog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《项目中有文件夹无法add》 — myblog&url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/&via=http://Yangerle.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://Yangerle.github.io/2018/09/17/项目中有文件夹无法add/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsUlEQVR42u3aQY4iMQwF0L7/pXu2I0138b+dIEZ6tUJQQF4Wscv211d8fT9ef9/z7+v8F367/7ffPHbh4eHhXVv67NNkuc/I315Hm4WHh4d3jZf/9POds2CQb1++Zjw8PLxP422+NUus8fDw8P5fXgtIEuIEj4eHh/dpvFmJtv1W/mmy3YdrLXh4eHhd7hp1kT7n9ZX+Hh4eHt66qz4LEs8H/fP7yTvFavHw8PAu8PIDt21Kze5styBZJx4eHt5Z3qydn5dWZ+WJvOD74gEADw8P7wKvHZ/KW1l5ctyObbWjDHh4eHhneW1LKR8UyPHtnUUJAw8PD+8ab1ZoyIsIe9IqyuHh4eEd5SVf3vxxvn3PwWlVqsDDw8M7ymsb+bO0+F5Z9sUv4+Hh4V3jtYlvOzK1aaG1QwyrmQg8PDy8uEuVH+hnixqbQklR/sDDw8O7zMuLAm3YaDdxP+yFh4eHd4OXLK4dnNoUYdvNehEe8PDw8K7xZgNYt9ltbhzNlOHh4eGteUnhtS2wJsMB+6GrulGHh4eHd4iXPNJvjux2uXm4qkcH8PDw8N7Imx3reUQ61Tb74X48PDy8C7xkRKBta80GBWbDXsmoAR4eHt4NXvuQv29QRe2r0fBBtK14eHh4h3jtiNUmsd4Eg3aoCw8PD+8Gb7a42dLzMYUkbEQpOx4eHt4beUnASAJJ3jybpexFMo2Hh4d3lNcWXjeHeFui3Zz8eHh4eGd53+U1GynYN9XyFtcPQ1d4eHh4R3n7Rv4syc6DyiZBx8PDw7vHa4PBbGhgFn5mzTY8PDy89/BmRYp8FGBW2jhQmMDDw8P7AF5yfM8aabOxhhf/joeHh/cxvE3RoS0Bz4rLeHh4eLd5bWmgTcHzQYFTa8DDw8O7x8sf8pM0ui225uxNWQQPDw/vEO8PNYaIvSlrtz4AAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
